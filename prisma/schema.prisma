@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:app.db"
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 model Product {
